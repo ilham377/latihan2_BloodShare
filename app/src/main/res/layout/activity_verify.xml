@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40B4E7"
+    tools:context=".Verify">
+
+    <TextView
+        android:id="@+id/verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify your Account"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We have sand verification code to your email"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_below="@+id/verify"
+        />
+
+    <EditText
+        android:id="@+id/edtcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:hint="@string/edittext_hint"
+        android:textColorHint="@color/white"
+
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/send"
+        />
+
+    <Button
+        android:id="@+id/btnsend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:backgroundTint="#40B4E7"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/edtcode"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resend_text"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_below="@+id/btnsend"
+        android:layout_marginTop="10dp"
+        />
+
+
+</RelativeLayout>

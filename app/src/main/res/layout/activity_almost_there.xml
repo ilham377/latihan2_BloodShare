@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40B4E7"
+    tools:context=".Almost_there">
+
+    <TextView
+        android:id="@+id/almost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Almost There"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:id="@+id/thank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thank you for registering with us. One more"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_below="@+id/almost"
+        />
+
+    <TextView
+        android:id="@+id/step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="step, you need to check your email"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_below="@+id/thank"
+        />
+
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="to active your account"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_below="@+id/step"
+        />
+
+    <Button
+        android:id="@+id/btnverify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Verify"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:backgroundTint="#40B4E7"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        android:layout_below="@+id/to"
+        android:layout_margin="50dp"
+        />
+
+
+</RelativeLayout>
